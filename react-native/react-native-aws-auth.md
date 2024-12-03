@@ -45,6 +45,8 @@ Let's get you the latest NPM packages and dependencies before we initialize your
    `react-native-safe-area-context`\
    `react-native-get-random-values`\
    `react-native-url-polyfill`
+7. Also, copy and paste the following code:\
+   `npm add --save-dev @aws-amplify/backend@latest @aws-amplify/backend-cli@latest typescript npm add @aws-amplify/ui-react`
 
 ### So far so good right?&#x20;
 
