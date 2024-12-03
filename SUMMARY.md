@@ -1,17 +1,8 @@
 # Table of contents
 
 * [Welcome](README.md)
+  * [About Me](readme/about-me.md)
 
-## Getting Started
+## React Native
 
-* [Quickstart](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
-
-## Basics
-
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [React Native & AWS Amplify Gen 2 Authentication](react-native/react-native-aws-auth.md)

@@ -1,7 +1,7 @@
 ---
 icon: hand-wave
-cover: https://gitbookio.github.io/onboarding-template-images/header.png
-coverY: 0
+cover: .gitbook/assets/SeanEugeneSheridan.jpeg
+coverY: 34
 layout:
   cover:
     visible: true
@@ -20,10 +20,12 @@ layout:
 
 # Welcome
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
-
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+Welcome to my little corner of the internet! 🎉 \
+\
+Here, I’m documenting my personal adventures in coding, React Native web and mobile applications, AWS implementation, and everything in between. \
+\
+Whether it’s solving tricky bugs, celebrating small wins, or just sharing what I’ve learned along the way, you’ll find it all here. 🚀&#x20;
 
 ### Jump right in
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td></td><td></td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td><a href="getting-started/publish-your-docs.md">publish-your-docs.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>About Me</strong></td><td>Just a quick intro 🙂</td><td></td><td></td><td><a href="react-native/react-native-aws-auth.md">react-native-aws-auth.md</a></td></tr><tr><td><strong>React Native</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
