@@ -19,7 +19,7 @@ As of December 2024, I am working on implementing the AWS Gen 2 Authentication w
 
 #### Why the change?
 
-AWS Amplify has recently transitioned from Amplify Gen 1 which utilises a tooling-first experience, using a CLI/Console based workflow to create the back-end. Wheres Gen 2, utilises a code-first DX, allowing developers to succinctly express app requirements like data models, business logic, and authorization rules in TypeScript.&#x20;
+AWS Amplify has recently transitioned from Amplify Gen 1 which utilises a tooling-first experience, using a CLI/Console based workflow to create the back-end. Whereas Gen 2, utilises a code-first DX, allowing developers to succinctly express app requirements like data models, business logic, and authorization rules in TypeScript.&#x20;
 
 Now that we know a little bit about the background, lets move on!
 
@@ -46,7 +46,7 @@ Let's get you the latest NPM packages and dependencies before we initialize your
    `react-native-get-random-values`\
    `react-native-url-polyfill`
 7. Also, copy and paste the following code:\
-   `npm add --save-dev @aws-amplify/backend@latest @aws-amplify/backend-cli@latest typescript npm add @aws-amplify/ui-react`
+   `npm add --save-dev @aws-amplify/backend@latest @aws-amplify/backend-cli@latest typescript @aws-amplify/ui-react`
 
 ### So far so good right?&#x20;
 
