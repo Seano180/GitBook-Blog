@@ -4,8 +4,9 @@ icon: face-smile-relaxed
 
 # About Me
 
-As of late 2024, I am currently working as a Rail Engineer at WSP in Melbourne Australia 🇦🇺 , where I design and deliver major rail infrastructure projects for local communities on behalf of the Victorian State Government.\
+<figure><img src="../.gitbook/assets/SeanSheridan.jpeg" alt="" width="375"><figcaption><p>Howdy Git Fam 👋</p></figcaption></figure>
 
+As of late 2024, I am currently working as a Rail Engineer at WSP in Melbourne Australia 🇦🇺 , where I design and deliver major rail infrastructure projects for local communities on behalf of the Victorian State Government.
 
 In my spare time, I enjoy exploring the tech space to advance my knowledge. Some of my standout achievements to date include:
 
