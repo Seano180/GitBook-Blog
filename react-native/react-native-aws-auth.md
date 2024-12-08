@@ -3,7 +3,7 @@ icon: bullseye-arrow
 description: December 2024
 ---
 
-# React Native & AWS Amplify Gen 2 Authentication
+# AWS Amplify Gen 2 Authentication Setup
 
 This article is aimed at assisting those who may be experiencing difficulty in initializing their React Native and AWS Amplify Gen 2 Authentication Back-End!&#x20;
 
@@ -11,7 +11,7 @@ This article is aimed at assisting those who may be experiencing difficulty in i
 
 ### Amplify Gen 1 versus Gen 2
 
-For those like me who are exploring the world of React Native and AWS services, namely AWS Amplify Gen2 - you would have come across an abundance of documentation, which is great! but when you're at a beginner level just like I am, it can feel like information overload!
+For those like me who are exploring the world of React Native and AWS services, namely AWS Amplify Gen2 - you would have come across an abundance of documentation, which is great! But, when you're at a beginner level just like I am, it can feel like information overload!
 
 As of December 2024, I am working on implementing the AWS Gen 2 Authentication within my React Native web and mobile application. If you are doing this too, you would surely have come across the below message on the official AWS documentation website:&#x20;
 
@@ -27,7 +27,7 @@ Now that we know a little bit about the background, lets move on!
 
 Let's get you the latest NPM packages and dependencies before we initialize your back-end! Follow these steps:
 
-1. Open your preferred code editor - in my case, its VS Code
+1. Open your preferred code editor - in my case, it's VS Code
 2. Navigate to your project folder and open a new terminal
 3. Run the commend `git pull origin main` (or master) to ensure you have the latest code on your local device - I would also recommend that you set this as a branch protection rule in your GitHub repo, this is always good practice!
 4. Run the command `npm install` to ensure that you have the latest packages installed/audited
@@ -72,14 +72,16 @@ now for the tricky part......... and the part that is <mark style="color:red;">*
 
 ### How to Initialize your Amplify Gen 2 Back-End
 
-Now that you have your AWS environment variables and access credentials, copy and paste them in to your VS code terminal. They should follow the format below:
+After setting up your AWS environment variables and access credentials, copy them from your AWS account and paste them into your VS Code terminal. They should follow the format below:
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-12-03 at 4.56.04 pm.png" alt=""><figcaption><p>AWS Access Key, Secret Key and Session Token (note: keys partially redacted for security)</p></figcaption></figure>
 
 Once the above is complete, copy and paste the following command in to your terminal: \
 `npx ampx sandbox`
 
-Now, you should see your Terminal initializing your backend! To confirm this, you can also check your AWS Amplify application Sandbox - to navigate here, follow these steps:
+Now, you should see your Terminal initializing your backend! To confirm this, you can also check your AWS Amplify application Sandbox.&#x20;
+
+To navigate here, follow these steps:
 
 1. Navigate to AWS Amplify from your AWS Console
 2. Click on the App that you are working on, it should display the below:
