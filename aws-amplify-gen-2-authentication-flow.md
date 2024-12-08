@@ -5,7 +5,7 @@ description: December 2024
 
 # AWS Amplify Gen 2 - Authentication Flow
 
-\*\* This article in currently in development.
+\*\* This article is currently in development.
 
 User Authentication - easy, I know how it works.... or at least, that's what I first thought when I first set out on this journey.
 
