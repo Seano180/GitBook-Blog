@@ -17,7 +17,7 @@ As of December 2024, I am working on implementing the AWS Gen 2 Authentication w
 
 <div data-full-width="false"><figure><img src="../.gitbook/assets/Screenshot 2024-12-03 at 3.59.50 pm.png" alt=""><figcaption><p>AWS Amplify Gen 2: React Native warning message</p></figcaption></figure></div>
 
-#### Why the change?
+### Why the change?
 
 AWS Amplify has recently transitioned from Amplify Gen 1 which utilises a tooling-first experience, using a CLI/Console based workflow to create the back-end. Whereas Gen 2, utilises a code-first DX, allowing developers to succinctly express app requirements like data models, business logic, and authorization rules in TypeScript.&#x20;
 
