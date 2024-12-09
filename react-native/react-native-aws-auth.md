@@ -73,9 +73,9 @@ Before we can initialize your Amplify back-end, you will need to assign the corr
 
 Our AWS Organization structure setup is as follows:
 
-* Root User&#x20;
+* Root User 🔐
   * Federated User (most of the same permissions/policies as the root user)
-  * IAM Users (amplify permissions/policies only)
+    * IAM Users (amplify permissions/policies only)
 
 The above is important because in order to initialize your Amplify back-end, you will need to issue Access Keys to each user within the IAM Console. Once you have done this, we can proceed to the next step.
 
@@ -87,8 +87,11 @@ After setting up your AWS environment variables and access credentials, copy the
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-12-03 at 4.56.04 pm.png" alt=""><figcaption><p>AWS Access Key, Secret Key and Session Token (note: keys partially redacted for security)</p></figcaption></figure>
 
-Once the above is complete, copy and paste the following command in to your terminal: \
-`npx ampx sandbox`
+Once the above is complete, copy and paste the following command in to your terminal:&#x20;
+
+```
+npx ampx sandbox
+```
 
 Now, you should see your Terminal initializing your backend! To confirm this, you can also check your AWS Amplify application Sandbox.&#x20;
 
@@ -97,10 +100,13 @@ To navigate here, follow these steps:
 1. Navigate to AWS Amplify from your AWS Console
 2. Click on the App that you are working on, it should display the below:
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-12-03 at 5.20.41 pm.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-12-03 at 5.20.41 pm.png" alt=""><figcaption><p>How to navigate to your Sandbox deployments page</p></figcaption></figure>
 
 3. Click on the "Manage Sandboxes" on the top right hand corner
 4. You should now see the Sandbox that you created in your VS Code Terminal! If it looks like the below, then congrats 🎉
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-12-09 at 11.03.13 am.png" alt=""><figcaption><p>Successfully deployed AWS Amplify Gen 2 Sandbox</p></figcaption></figure>
+
 5. The final step is to now run `git push` in your terminal to trigger a CI/CD build.
 
 **Mission completed.**
