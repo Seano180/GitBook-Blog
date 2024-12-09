@@ -35,18 +35,29 @@ Let's get you the latest NPM packages and dependencies before we initialize your
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-12-03 at 4.20.47 pm.png" alt=""><figcaption><p>Working Tree after running the npm create amplfy command in your CLI</p></figcaption></figure>
 
-6. The fastest way to get your login experience up and running is to use the AWS Authenticator UI component available in the Amplify UI library. To do this, you need to add the following dependencies to your project:\
-   `npm add`\
-   `@aws-amplify/ui-react-native`\
-   `@aws-amplify/react-native`\
-   `aws-amplify`\
-   `@react-native-community/netinfo`\
-   `@react-native-async-storage/async-storage`\
-   `react-native-safe-area-context`\
-   `react-native-get-random-values`\
-   `react-native-url-polyfill`
-7. Also, copy and paste the following code:\
-   `npm add --save-dev @aws-amplify/backend@latest @aws-amplify/backend-cli@latest typescript @aws-amplify/ui-react`
+6. The fastest way to get your login experience up and running is to use the AWS Authenticator UI component available in the Amplify UI library. To do this, you need to add the following dependencies to your project:
+
+```
+npm add
+@aws-amplify/ui-react-native
+@aws-amplify/react-native
+aws-amplify
+@react-native-community/netinfo
+@react-native-async-storage/async-storage
+react-native-safe-area-context
+react-native-get-random-values
+react-native-url-polyfill
+```
+
+6. Also, copy and paste the following code:
+
+{% code overflow="wrap" %}
+```
+npm add --save-dev @aws-amplify/backend@latest 
+@aws-amplify/backend-cli@latest typescript 
+@aws-amplify/ui-react
+```
+{% endcode %}
 
 ### So far so good right?&#x20;
 
