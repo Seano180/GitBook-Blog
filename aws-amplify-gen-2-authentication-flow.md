@@ -29,6 +29,55 @@ Typical user authentication flows are broken down in to 2 main categories:
 
 This is nothing we haven't seen before. But understanding how to implement this within React Native code is a lot more challenging.
 
-We need to ensure that the Root Layout is wrapped in < Authenticator /> tags, this ensures that IF the user is logged out, they cannot gain access to any page/screen within the application.&#x20;
+Firstly, and most importantly, it's essential to understand which parts of your application need to be secured. For example, an unauthenticated user should not be able to access the "Dashboard" page.
 
-<figure><img src=".gitbook/assets/AWS (2).png" alt=""><figcaption></figcaption></figure>
+If you want to secure the entire app, requiring users to either sign up or log in, you should ensure the Root Layout is wrapped in \<Authenticator /> tags. This guarantees that IF the user is logged out, they can only gain access to the Login screen, and not any other page/screen within the app.
+
+The method described above is the most common approach with regards to app authentication, and the one we use in our React Native application.
+
+To help visualize the OAuth flow, I’ve created the diagram below. This flow uses the default authentication levels in Cognito, where authentication codes are sent to the user only during the Sign-Up and Reset Password stages.
+
+\*\* Please note that this Authentication flow does not include Social and Custom Sign-In/Sign-Up providers like Facebook or Google.
+
+<figure><img src=".gitbook/assets/AWS (2).png" alt=""><figcaption><p>AWS Amplify (Gen 2) - User Authentication Flow</p></figcaption></figure>
+
+### Cognito User-Pool
+
+Let’s talk briefly about AWS Cognito.
+
+You will want to create a user-pool and select the options that best suit your application. It’s important to note that you will not be able to make changes to your User-Pool after it has been created, so please ensure that you set it up accurately!
+
+You will need to setup the following:
+
+1\.       Select the Application type that best suits you.
+
+2\.       Name your User-Pool.
+
+3\.       Select the Options for Sign-in.
+
+4\.       Select the attributes that you want to require from users upon Sign-up.
+
+👉 **Tip:** Request more information than you think you will require – this will decrease the likelihood of you haven’t to create a new User-Pool.
+
+<figure><img src=".gitbook/assets/Cognito1.png" alt=""><figcaption><p>AWS Cognito - Create a User-Pool</p></figcaption></figure>
+
+Once you are satisfied with the User-Pool settings, click “Create”.
+
+You will then see your User-Pool within the Cognito Dashboard:
+
+<figure><img src=".gitbook/assets/Cognito.png" alt=""><figcaption><p>AWS Cognito - Successful Creation of a User-Pool</p></figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
