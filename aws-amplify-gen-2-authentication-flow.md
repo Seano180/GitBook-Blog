@@ -5,8 +5,6 @@ description: December 2024
 
 # AWS Amplify Gen 2 - Authentication Flow
 
-\*\* This article is currently in development.
-
 User Authentication - easy, I know how it works.... or at least, that's what I first thought when I first set out on this journey.
 
 User sign-up and login flows may seem straightforward since everyone has navigated them before, and they rarely change. So, why discuss these processes in detail?
@@ -41,43 +39,86 @@ To help visualize the OAuth flow, I’ve created the diagram below. This flow us
 
 <figure><img src=".gitbook/assets/AWS (2).png" alt=""><figcaption><p>AWS Amplify (Gen 2) - User Authentication Flow</p></figcaption></figure>
 
-### Cognito User-Pool
+### Steps for Implementing Authentication
 
-Let’s talk briefly about AWS Cognito.
+Implementing Authentication in the correct order is crucial, if you want to avoid wasting days scratching your head and wondering why your app doesn't work (speaking from experience :joy:)
 
-You will want to create a user-pool and select the options that best suit your application. It’s important to note that you will not be able to make changes to your User-Pool after it has been created, so please ensure that you set it up accurately!
+I had a genius idea to code and implement the Login and Logout screens first. Easy!
 
-You will need to setup the following:
+Although, it didn't work?&#x20;
 
-1\.       Select the Application type that best suits you.
+The error message in my console kept prompting <mark style="color:red;">"Username does not exist in User Pool"</mark>
 
-2\.       Name your User-Pool.
+But why? what does this mean?
 
-3\.       Select the Options for Sign-in.
+The error message was highlighting that the user (me), does not exist in the AWS Cognito User-Pool. To fix this, there are 2 solutions to the above error message:
 
-4\.       Select the attributes that you want to require from users upon Sign-up.
+1. **(Not Recommended)** - Create a AWS Cognito User-Pool and add a "verified" user to that pool (you can then use this email address to _PARTIALLY_ test the Login screen) however, since this email address does NOT have an assigned password, you will not be able to successfuly Login to your app.
+2. **(Recommended)** - Code and Implement your Sign-Up screen _FIRST!_ - By doing this, each time you Sign-Up, the user will be automatically added to your AWS Cognito User-Pool, and will allow you to Login with a password.
 
-👉 **Tip:** Request more information than you think you will require – this will decrease the likelihood of you haven’t to create a new User-Pool.
+Insert cheesy quote below:
 
-<figure><img src=".gitbook/assets/Cognito1.png" alt=""><figcaption><p>AWS Cognito - Create a User-Pool</p></figcaption></figure>
+> _`Taking the easy road is like ordering dessert first—it's sweet, but it might come back to bite you later!`_
 
-Once you are satisfied with the User-Pool settings, click “Create”.
+\
+Now that we have gotten that out of the way, if you wish to learn about AWS Cognito, and the steps to set it up, feel free to check out my article here:&#x20;
 
-You will then see your User-Pool within the Cognito Dashboard:
-
-<figure><img src=".gitbook/assets/Cognito.png" alt=""><figcaption><p>AWS Cognito - Successful Creation of a User-Pool</p></figcaption></figure>
-
-
-
-
+{% content-ref url="react-native/aws-cognito-user-pool-creation-and-setup.md" %}
+[aws-cognito-user-pool-creation-and-setup.md](react-native/aws-cognito-user-pool-creation-and-setup.md)
+{% endcontent-ref %}
 
 
 
+### AWS Authentication Code
 
+In this section, I will outline some of the AWS API properties used in our app, following AWS naming conventions to ensure they are called correctly.&#x20;
 
+The complete React Native code for each sub-section will be provided via links to help facilitate a quick implementation.
 
+#### <mark style="color:blue;">Sign-Up</mark>
 
+function SignUp ()  {
 
+&#x20;    handleSignUp
 
+&#x20;         signUpResponse
 
+&#x20;    handleSignUpConfirmation
 
+};
+
+:point\_right: **Code Link:** TBC
+
+#### <mark style="color:blue;">Login</mark>
+
+function onSignInPressed()  {
+
+&#x20;    signIn&#x20;
+
+};
+
+:point\_right: **Code Link:** TBC
+
+#### <mark style="color:blue;">Logout</mark>
+
+function handleSignOut()  {
+
+&#x20;    signOut
+
+};
+
+:point\_right: **Code Link:** TBC
+
+#### <mark style="color:blue;">Reset Password</mark>
+
+function ForgotPassword()  {
+
+&#x20;    handleResetPassword
+
+&#x20;         handleResetPasswordNextSteps
+
+&#x20;    handleConfirmResetPassword
+
+};
+
+:point\_right: **Code Link:** TBC
