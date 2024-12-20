@@ -37,7 +37,7 @@ To help visualize the OAuth flow, I’ve created the diagram below. This flow us
 
 \*\* Please note that this Authentication flow does not include Social and Custom Sign-In/Sign-Up providers like Facebook or Google.
 
-<figure><img src=".gitbook/assets/AWS (2).png" alt=""><figcaption><p>AWS Amplify (Gen 2) - User Authentication Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/AWS (2).png" alt=""><figcaption><p>AWS Amplify (Gen 2) - User Authentication Flow</p></figcaption></figure>
 
 ### Steps for Implementing Authentication
 
@@ -63,8 +63,8 @@ Insert cheesy quote below:
 \
 Now that we have gotten that out of the way, if you wish to learn about AWS Cognito, and the steps to set it up, feel free to check out my article here:&#x20;
 
-{% content-ref url="react-native/aws-cognito-user-pool-creation-and-setup.md" %}
-[aws-cognito-user-pool-creation-and-setup.md](react-native/aws-cognito-user-pool-creation-and-setup.md)
+{% content-ref url="aws-cognito-user-pool-creation-and-setup.md" %}
+[aws-cognito-user-pool-creation-and-setup.md](aws-cognito-user-pool-creation-and-setup.md)
 {% endcontent-ref %}
 
 
