@@ -1,6 +1,6 @@
 ---
+description: March 2025
 icon: arrow-progress
-description: December 2024
 ---
 
 # AWS Amplify Gen 2 - Authentication Flow
@@ -9,7 +9,7 @@ User Authentication - easy, I know how it works.... or at least, that's what I f
 
 User sign-up and login flows may seem straightforward since everyone has navigated them before, and they rarely change. So, why discuss these processes in detail?
 
-As we dive into December 2024, you might have noticed that the AWS Amplify Gen 2 documentation on authentication flows still leaves a bit to be desired, mainly because of the recent transition from Gen 1. So, I thought, why not write up a helpful article to deepen our understanding of these user authentication flows? Let's jump right in and explore together!
+As we dive into March 2025, you might have noticed that the AWS Amplify Gen 2 documentation on authentication flows still leaves a bit to be desired, mainly because of the recent transition from Gen 1. So, I thought, why not write up a helpful article to deepen our understanding of these user authentication flows? Let's jump right in and explore together!
 
 Typical user authentication flows are broken down in to 2 main categories:
 

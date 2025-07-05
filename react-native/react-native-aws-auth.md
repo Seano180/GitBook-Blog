@@ -1,6 +1,6 @@
 ---
-icon: bullseye-arrow
 description: December 2024
+icon: bullseye-arrow
 ---
 
 # AWS Amplify Gen 2 Authentication Setup
@@ -13,7 +13,7 @@ This article is aimed at assisting those who may be experiencing difficulty in i
 
 For those like me who are exploring the world of React Native and AWS services, namely AWS Amplify Gen2 - you would have come across an abundance of documentation, which is great! But, when you're at a beginner level just like I am, it can feel like information overload!
 
-As of December 2024, I am working on implementing the AWS Gen 2 Authentication within my React Native web and mobile application. If you are doing this too, you would surely have come across the below message on the official AWS documentation website:&#x20;
+As of December 2024, I am working on implementing the AWS Gen 2 Authentication within my React Native web and mobile application. If you are doing this too, you would surely have come across the below message posted on the official AWS documentation website:&#x20;
 
 <div data-full-width="false"><figure><img src="../.gitbook/assets/Screenshot 2024-12-03 at 3.59.50 pm.png" alt=""><figcaption><p>AWS Amplify Gen 2: React Native warning message</p></figcaption></figure></div>
 
@@ -79,7 +79,7 @@ Our AWS Organization structure setup is as follows:
 
 The above is important because in order to initialize your Amplify back-end, you will need to issue Access Keys to each user within the IAM Console. Once you have done this, we can proceed to the next step.
 
-now for the tricky part......... and the part that is <mark style="color:red;">**NOT**</mark> mentioned in the Amplify back-end initialization documentation above.
+now for the tricky part, and the part that is not mentioned in the Amplify back-end initialization documentation above.
 
 ### How to Initialize your Amplify Gen 2 Back-End
 
